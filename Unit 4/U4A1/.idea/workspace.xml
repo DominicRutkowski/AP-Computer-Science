@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41693ffc-b2ee-4279-b21b-d3f9b6798b9d" name="Default" comment="" />
+    <list default="true" id="9ed615ef-5a7f-4612-81f3-a2c4463634aa" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,31 +18,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Postage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Postage.java">
+      <file leaf-file-name="Binary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Binary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+            <state relative-caret-position="608">
+              <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding>
-                <element signature="e#0#1071#0" expanded="true" />
-                <element signature="method#Postage#0;class#Postage#0" expanded="true" />
-                <element signature="method#Postage#1;class#Postage#0" expanded="true" />
-                <element signature="method#calculate#0;class#Postage#0" expanded="true" />
+                <element signature="e#0#646#0" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+                <element signature="method#convert#0;class#Binary#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="U3Test.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/U3Test.java">
+      <file leaf-file-name="U4A1.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/U4A1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+            <state relative-caret-position="257">
+              <caret line="51" column="92" lean-forward="false" selection-start-line="51" selection-start-column="92" selection-end-line="51" selection-end-column="92" />
               <folding>
-                <element signature="e#0#994#0" expanded="true" />
+                <element signature="e#0#1581#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="method#init#0;class#U3Test#0" expanded="true" />
-                <element signature="method#paint#0;class#U3Test#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +68,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Postage.java" />
-        <option value="$PROJECT_DIR$/src/U3Test.java" />
+        <option value="$PROJECT_DIR$/src/Binary.java" />
+        <option value="$PROJECT_DIR$/src/U4A1.java" />
       </list>
     </option>
   </component>
@@ -101,18 +99,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Unit 3 Test Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Unit 3 Test Project" type="462c0819:PsiDirectoryNode" />
+              <item name="U4A1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U4A1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Unit 3 Test Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Unit 3 Test Project" type="462c0819:PsiDirectoryNode" />
+              <item name="U4A1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U4A1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -120,7 +119,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -142,13 +140,13 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="U3Test" type="Applet" factoryName="Applet" temporary="true">
+    <configuration name="U4A1" type="Applet" factoryName="Applet" temporary="true">
       <option name="WIDTH" value="400" />
-      <option name="MAIN_CLASS_NAME" value="U3Test" />
+      <option name="MAIN_CLASS_NAME" value="U4A1" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module name="Unit 3 Test Project">
-        <option name="moduleName" value="Unit 3 Test Project" />
+      <module name="U4A1">
+        <option name="moduleName" value="U4A1" />
       </module>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -233,7 +231,7 @@
     </configuration>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Applet.U3Test" />
+        <item index="0" class="java.lang.String" itemvalue="Applet.U4A1" />
       </list>
     </recent_temporary>
   </component>
@@ -245,20 +243,21 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="41693ffc-b2ee-4279-b21b-d3f9b6798b9d" name="Default" comment="" />
-      <created>1517123239504</created>
+      <changelist id="9ed615ef-5a7f-4612-81f3-a2c4463634aa" name="Default" comment="" />
+      <created>1517123497232</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1517123239504</updated>
-      <workItem from="1517123242376" duration="257000" />
+      <updated>1517123497232</updated>
+      <workItem from="1517123503263" duration="253000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257000" />
+    <option name="totallyTimeSpent" value="253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="993" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -268,12 +267,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -300,28 +299,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Postage.java">
+    <entry file="file://$PROJECT_DIR$/src/Binary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        <state relative-caret-position="608">
+          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
           <folding>
-            <element signature="e#0#1071#0" expanded="true" />
-            <element signature="method#Postage#0;class#Postage#0" expanded="true" />
-            <element signature="method#Postage#1;class#Postage#0" expanded="true" />
-            <element signature="method#calculate#0;class#Postage#0" expanded="true" />
+            <element signature="e#0#646#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="method#convert#0;class#Binary#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/U3Test.java">
+    <entry file="file://$PROJECT_DIR$/src/U4A1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        <state relative-caret-position="257">
+          <caret line="51" column="92" lean-forward="false" selection-start-line="51" selection-start-column="92" selection-end-line="51" selection-end-column="92" />
           <folding>
-            <element signature="e#0#994#0" expanded="true" />
+            <element signature="e#0#1581#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#U3Test#0" expanded="true" />
-            <element signature="method#paint#0;class#U3Test#0" expanded="true" />
           </folding>
         </state>
       </provider>

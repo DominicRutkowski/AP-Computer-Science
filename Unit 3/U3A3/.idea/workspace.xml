@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="612da427-bec7-498c-831b-2196d56428f6" name="Default" comment="" />
+    <list default="true" id="1021806f-c89b-435f-bc6b-aa7b59e185cc" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,15 +18,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="U3A2.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/U3A2.java">
+      <file leaf-file-name="Month.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Month.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="111" column="46" lean-forward="false" selection-start-line="111" selection-start-column="46" selection-end-line="111" selection-end-column="46" />
+            <state relative-caret-position="1045">
+              <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
               <folding>
-                <element signature="e#0#3935#0" expanded="true" />
+                <element signature="e#0#804#0" expanded="true" />
+                <element signature="method#Month#0;class#Month#0" expanded="true" />
+                <element signature="method#Month#1;class#Month#0" expanded="true" />
+                <element signature="method#setDays#0;class#Month#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#801#802#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="U3A3.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/U3A3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1577">
+              <caret line="83" column="1" lean-forward="false" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#1996#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="method#paint#0;class#U3A2#0" expanded="true" />
+                <element signature="method#init#0;class#U3A3#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,7 +71,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/U3A2.java" />
+        <option value="$PROJECT_DIR$/src/U3A3.java" />
+        <option value="$PROJECT_DIR$/src/Month.java" />
       </list>
     </option>
   </component>
@@ -86,19 +104,24 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="U3A2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="U3A2" type="462c0819:PsiDirectoryNode" />
+              <item name="U3A3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U3A3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U3A3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U3A3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -120,13 +143,13 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="U3A2" type="Applet" factoryName="Applet" temporary="true">
+    <configuration name="U3A3" type="Applet" factoryName="Applet" temporary="true">
       <option name="WIDTH" value="400" />
-      <option name="MAIN_CLASS_NAME" value="U3A2" />
+      <option name="MAIN_CLASS_NAME" value="U3A3" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module name="U3A2">
-        <option name="moduleName" value="U3A2" />
+      <module name="U3A3">
+        <option name="moduleName" value="U3A3" />
       </module>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -211,7 +234,7 @@
     </configuration>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Applet.U3A2" />
+        <item index="0" class="java.lang.String" itemvalue="Applet.U3A3" />
       </list>
     </recent_temporary>
   </component>
@@ -223,17 +246,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="612da427-bec7-498c-831b-2196d56428f6" name="Default" comment="" />
-      <created>1517122720995</created>
+      <changelist id="1021806f-c89b-435f-bc6b-aa7b59e185cc" name="Default" comment="" />
+      <created>1517123099895</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1517122720995</updated>
-      <workItem from="1517122723843" duration="374000" />
+      <updated>1517123099895</updated>
+      <workItem from="1517123103164" duration="100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="374000" />
+    <option name="totallyTimeSpent" value="100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="993" extended-state="0" />
@@ -279,14 +302,29 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/U3A2.java">
+    <entry file="file://$PROJECT_DIR$/src/Month.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="111" column="46" lean-forward="false" selection-start-line="111" selection-start-column="46" selection-end-line="111" selection-end-column="46" />
+        <state relative-caret-position="1045">
+          <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
           <folding>
-            <element signature="e#0#3935#0" expanded="true" />
+            <element signature="e#0#804#0" expanded="true" />
+            <element signature="method#Month#0;class#Month#0" expanded="true" />
+            <element signature="method#Month#1;class#Month#0" expanded="true" />
+            <element signature="method#setDays#0;class#Month#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/U3A3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1577">
+          <caret line="83" column="1" lean-forward="false" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#1996#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="method#paint#0;class#U3A2#0" expanded="true" />
+            <element signature="method#init#0;class#U3A3#0" expanded="true" />
           </folding>
         </state>
       </provider>

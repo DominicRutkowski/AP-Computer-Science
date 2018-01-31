@@ -1,3 +1,9 @@
+// Dominic Rutkowski
+//
+/* This class lets the user create an array to
+   be sorted with selection or insertion sort.
+*/
+
 public class Sorting
 {
 	private int[] arr;

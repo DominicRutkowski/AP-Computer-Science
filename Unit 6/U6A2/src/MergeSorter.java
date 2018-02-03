@@ -33,6 +33,31 @@ public class MergeSorter
 
 	private void merge(int[] first, int[] second)
 	{
-
+		int i = 0;
+		int j = 0;
+		int k = 0;
+		
+		while (i < first.length && j < second.length)
+		{
+			if (first[i] < second[j])
+			{
+				arr[k] = first[i];
+				i++;
+			}
+			else
+			{
+				arr[k] = second[j];
+				j++;
+			}
+			k++;
+		}
+		
+		System.arraycopy(first, i, arr, k, first.length - i);
+		System.arraycopy(second, j, arr, k, second.length - j);
+	}
+	
+	public int[] getArr()
+	{
+		return arr;
 	}
 }

@@ -25,13 +25,13 @@ public class U6A2 extends JApplet
 
 		MergeSorter merge = new MergeSorter(mergeArray);
 		long mergeStart = System.currentTimeMillis();
-		merge.mergeSort();
+		merge.sort();
 		long mergeStop = System.currentTimeMillis();
 		int mergeTime = (int) (mergeStop - mergeStart);
 
 		QuickSorter quick = new QuickSorter(quickArray);
 		long quickStart = System.currentTimeMillis();
-		quick.quickSort();
+		quick.sort(0, quickArray.length - 1);
 		long quickStop = System.currentTimeMillis();
 		int quickTime = (int) (quickStop - quickStart);
 
@@ -49,7 +49,7 @@ public class U6A2 extends JApplet
 			text.append(array[i] + "\t");
 		}
 
-		text.append("\n\n\nAfter MergeSort\n\n");
+		text.append("\n\n\nMergeSort\n\n");
 		for (int i = 0; i < 15; i++)
 		{
 			text.append(mergeArraySorted[i] + "\t");
@@ -59,9 +59,9 @@ public class U6A2 extends JApplet
 		{
 			text.append(mergeArraySorted[i] + "\t");
 		}
-		text.append("\n\nTime = " + mergeTime + " milliseconds");
+		text.append("\n\n" + mergeTime + " milliseconds");
 
-		text.append("\n\n\nAfter QuickSort\n\n");
+		text.append("\n\n\nQuickSort\n\n");
 		for (int i = 0; i < 15; i++)
 		{
 			text.append(quickArraySorted[i] + "\t");
@@ -71,7 +71,7 @@ public class U6A2 extends JApplet
 		{
 			text.append(quickArraySorted[i] + "\t");
 		}
-		text.append("\n\nTime = " + quickTime + " milliseconds");
+		text.append("\n\n" + quickTime + " milliseconds");
 
 		Container cont = getContentPane();
 		cont.add(text);

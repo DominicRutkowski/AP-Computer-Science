@@ -23,14 +23,14 @@ public class U6A2 extends JApplet
 		int[] mergeArray = array.clone();
 		int[] quickArray = array.clone();
 
-		MergeSorter merge = new MergeSorter(mergeArray);
 		long mergeStart = System.currentTimeMillis();
+		MergeSorter merge = new MergeSorter(mergeArray);
 		merge.sort();
 		long mergeStop = System.currentTimeMillis();
 		int mergeTime = (int) (mergeStop - mergeStart);
 
-		QuickSorter quick = new QuickSorter(quickArray);
 		long quickStart = System.currentTimeMillis();
+		QuickSorter quick = new QuickSorter(quickArray);
 		quick.sort(0, quickArray.length - 1);
 		long quickStop = System.currentTimeMillis();
 		int quickTime = (int) (quickStop - quickStart);

@@ -1,6 +1,8 @@
 // Dominic Rutkowski
 //
-/*
+/* This project sorts an array of Strings by length
+   and by lexicographical order. It then searches
+   each array for a String called "Jones".
 */
 
 import javax.swing.JApplet;
@@ -30,7 +32,19 @@ public class U6Test extends JApplet
 		text.setText("Sorted Alphabetically\tSorted by Length\n---------------------\t----------------\n");
 		for (int i = 0; i < array.length; i++)
 		{
-			int tabs = (24 - alphabeticalArray[i].length()) / 8;
+			int tabs;
+			if (alphabeticalArray[i].length() < 8)
+			{
+				tabs = 3;
+			}
+			else if (alphabeticalArray[i].length() < 16)
+			{
+				tabs = 2;
+			}
+			else
+			{
+				tabs = 1;
+			}
 			text.append(alphabeticalArray[i]);
 			for (int j = 0; j < tabs; j++)
 			{

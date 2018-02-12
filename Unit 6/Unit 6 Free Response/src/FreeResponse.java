@@ -4,7 +4,7 @@ public class FreeResponse
 {
 	private int[] ary = new int[10000];
 
-	public FreeResponse()
+	private FreeResponse()
 	{
 		fillArray();
 	}

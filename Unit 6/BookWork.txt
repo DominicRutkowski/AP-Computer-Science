@@ -1,17 +1,15 @@
 Pages 659 - 660
 Exercises: R14.2, R14.5, R14.6
 
-R14.2. Sorting an array rearranges the elements in ascending (or ocassionally descending) order. Searching an array attempts to locate the index at which a target element exists in the array.
+R14.2. Sorting an array rearranges the elements in ascending (or occasionally descending) order. Searching an array attempts to locate the index at which a target element exists in the array.
 
 R14.5. Because algorithm A is O(n), we can define its running time as function f where x is the data size and f(x) is the runtime in seconds:
 		f(x) = x/200
 	   Therefore, for a data size of 2000 records, it will take 10 seconds. It will take 50 seconds to handle 10000 records.
 
 R14.6.
-
 		O(n)  O(n^2)  O(n^3)  O(n ln(n))  O(2^n)
-1000    5     5       5       5          5
-2000    10    20      40      ~6.9       20
-3000    15    45      135     ~16.5      40
-10000   50    500     5000    ~115.1     5120
-							  These estimates use natural logarithms
+1000    5     5       5       5           5
+2000    10    20      40      ~11         2^1000*5
+3000    15    45      135     ~17.4       2^2000*5
+10000   50    500     5000    ~66.7       2^9000*5

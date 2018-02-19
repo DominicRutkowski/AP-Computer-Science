@@ -20,10 +20,10 @@ public class Sorter
 				{
 					minimumPosition = k;
 				}
-				temp = list[j];
-				list[j] = list[minimumPosition];
-				list[minimumPosition] = temp;
 			}
+			temp = list[j];
+			list[j] = list[minimumPosition];
+			list[minimumPosition] = temp;
 		}
 	}
 

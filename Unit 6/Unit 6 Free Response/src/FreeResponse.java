@@ -24,7 +24,7 @@ public class FreeResponse
 		long secondAryStop = System.currentTimeMillis();
 		int secondAryTime = (int) (secondAryStop - secondAryStart);
 
-		System.out.println("Idea #1:  Found = " + foundAry + "\t\t" + "Time = " + aryTime);
+		System.out.println("Idea #1:  Found = " + foundAry + "\t\t" + "Time = " + aryTime + "\n");
 		System.out.println("Idea #2:  Found = " + foundSecondAry + "\t\t" + "Time = " + secondAryTime);
 	}
 

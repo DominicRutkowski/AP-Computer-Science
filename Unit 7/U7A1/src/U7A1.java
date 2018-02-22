@@ -39,7 +39,7 @@ public class U7A1 extends JApplet
 		accountOne.calculateInterest();
 		accountTwo.calculateInterest();
 		text.append("\n\nFinal Balance for Account " + accountOne.getAccountNumber() + " = " + accountOne.getBalance());
-		text.append("\n\nFinal Balance for Account " + accountTwo.getAccountNumber() + " = " + accountTwo.getBalance());
+		text.append("\nFinal Balance for Account " + accountTwo.getAccountNumber() + " = " + accountTwo.getBalance());
 		text.append("\n\nInterest Rate = " + BankAccount.getInterestRate() + " %");
 
 		Container cont = getContentPane();

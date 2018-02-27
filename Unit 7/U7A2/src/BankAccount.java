@@ -80,6 +80,11 @@ public class BankAccount
 		return accountNumber;
 	}
 
+	public char getAccountType()
+	{
+		return accountType;
+	}
+
 	public String getBalance()
 	{
 		return String.format("$ %.2f", balance);

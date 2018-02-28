@@ -1,6 +1,7 @@
 // Dominic Rutkowski
 //
-/*
+/* This driver class simulates the change
+   in balance of many BankAccounts.
 */
 
 import java.awt.Container;
@@ -62,7 +63,7 @@ public class U7A2 extends JFrame
 		text.append("Account#\tBalance\n");
 		for (BankAccount account : accounts)
 		{
-			text.append(account.getAccountNumber() + account.getAccountType() + "\t\t" + account.getBalance() + "\n");
+			text.append(account.getAccountNumber() + String.valueOf(account.getAccountType()) + "\t\t" + account.getBalance() + "\n");
 		}
 	}
 
@@ -174,7 +175,7 @@ public class U7A2 extends JFrame
 			int count = 1;
 			for (BankAccount account : accounts)
 			{
-				output += account.getAccountNumber() + account.getAccountType() + " " + account.getBalance().substring(2);
+				output += account.getAccountNumber() + String.valueOf(account.getAccountType()) + " " + account.getBalance().substring(2);
 				if (count <= accounts.size())
 				{
 					output += "\n";

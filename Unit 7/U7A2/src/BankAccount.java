@@ -4,8 +4,6 @@
    deposits, withdrawals, interest accumulation, etc.
 */
 
-// import java.util.Random;
-
 public class BankAccount
 {
 	private double balance;
@@ -25,17 +23,10 @@ public class BankAccount
 		accountType = accountInformation.charAt(accountInformation.length() - 1);
 	}
 
-//	private void setBalance(int max)
-//	{
-//		Random random = new Random();
-//		double balance;
-//		do
-//		{
-//			balance = random.nextDouble() * max;
-//		}
-//		while (balance == 0);
-//		this.balance = balance;
-//	}
+	public void setBalance(double balance)
+	{
+		this.balance = balance;
+	}
 
 	public String deposit(double amount)
 	{

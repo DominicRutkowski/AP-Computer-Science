@@ -3,27 +3,37 @@
 /*
 */
 
-import javax.swing.JFrame;
 import java.awt.Container;
 import java.awt.Font;
+import java.io.*;
+import javax.swing.JFrame;
 import javax.swing.JTextArea;
 import java.util.ArrayList;
-import java.io.*;
 import java.util.Scanner;
 
 public class U7A2 extends JFrame
 {
-	private ArrayList<BankAccount> accounts;
+	private ArrayList<BankAccount> accounts = new ArrayList<BankAccount>();
 	private JTextArea text = new JTextArea();
 
 	private U7A2()
 	{
-		buildList("myCreditUnion.txt");
+		buildList("src/myCreditUnion.txt");
 		printList();
 
+		deposit("103s", 500);
+		withdraw("110s", 304.52);
+		insertNewAccount("105c", 300);
+		deleteDormantAccounts();
+		correctError("107s", 1113.88);
+		applyInterest();
+		insertNewAccount("111s", 100);
+		fileUpdated("src/Temp.txt");
+
+		text.setFont(new Font("Monospaced", Font.PLAIN, 12));
 		Container cont = getContentPane();
 		cont.add(text);
-		setSize(700, 700);
+		setSize(500, 500);
 		setVisible(true);
 	}
 
@@ -49,12 +59,10 @@ public class U7A2 extends JFrame
 
 	private void printList()
 	{
-		text.setFont(new Font("Monospaced", Font.PLAIN, 12));
-
-		text.setText("Account#\tBalance");
+		text.append("Account#\tBalance\n");
 		for (BankAccount account : accounts)
 		{
-			text.append(account.getAccountNumber() +account.getAccountType() + "\t\t" + account.getBalance() + "\n");
+			text.append(account.getAccountNumber() + account.getAccountType() + "\t\t" + account.getBalance() + "\n");
 		}
 	}
 
@@ -88,10 +96,100 @@ public class U7A2 extends JFrame
 		}
 	}
 
-	private void insertNewAccount(String accountInformation, double amount)
+	private void insertNewAccount(String accountInformation, double balance)
 	{
 		int accountNumber = Integer.parseInt(accountInformation.substring(0, 3));
 		char accountType = accountInformation.charAt(3);
+		if (accountType == 's')
+		{
+			accounts.add(new BankAccount(accountInformation, balance));
+		}
+		else
+		{
+			boolean flag = false;
+			for (int i = 0; i < accounts.size(); i++)
+			{
+				if (accounts.get(i).getAccountNumber() == accountNumber)
+				{
+					accounts.add(i + 1, new BankAccount(accountInformation, balance));
+					flag = true;
+					break;
+				}
+			}
+			if (!flag)
+			{
+				accounts.add(new BankAccount(accountInformation, balance));
+			}
+		}
+		text.append("\nNew Account Added");
+	}
+
+	private void deleteDormantAccounts()
+	{
+		int accountsRemoved = 0;
+		for (int i = 0; i < accounts.size(); i++)
+		{
+			if (accounts.get(i).getBalance().equals("$ 0.00"))
+			{
+				accounts.remove(i);
+				accountsRemoved++;
+				i--;
+			}
+		}
+		text.append("\n" + accountsRemoved + " Account(s) Removed");
+	}
+
+	private void correctError(String accountInformation, double balance)
+	{
+		int accountNumber = Integer.parseInt(accountInformation.substring(0, 3));
+		char accountType = accountInformation.charAt(3);
+		for (BankAccount account : accounts)
+		{
+			if (account.getAccountNumber() == accountNumber && account.getAccountType() == accountType)
+			{
+				account.setBalance(balance);
+				text.append("\nCorrection Completed");
+				break;
+			}
+		}
+	}
+
+	private void applyInterest()
+	{
+		for (BankAccount account : accounts)
+		{
+			account.calculateInterest();
+		}
+		text.append("\nInterest Applied to all Savings Accounts");
+	}
+
+	private void fileUpdated(String path)
+	{
+		try
+		{
+			FileWriter writer = new FileWriter(path);
+			PrintWriter out = new PrintWriter(writer);
+
+			String output = "";
+			int count = 1;
+			for (BankAccount account : accounts)
+			{
+				output += account.getAccountNumber() + account.getAccountType() + " " + account.getBalance().substring(2);
+				if (count <= accounts.size())
+				{
+					output += "\n";
+				}
+				count++;
+			}
+
+			out.println(output);
+			out.close();
+		}
+		catch (IOException e)
+		{
+			throw new RuntimeException(e.toString());
+		}
+		text.append("\nFile Updated");
 	}
 
 	public static void main(String[] args)

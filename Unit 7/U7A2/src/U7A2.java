@@ -19,7 +19,7 @@ public class U7A2 extends JFrame
 
 	private U7A2()
 	{
-		buildList("src/myCreditUnion.txt");
+		buildList("myCreditUnion.txt");
 		printList();
 
 		deposit("103s", 500);
@@ -29,7 +29,7 @@ public class U7A2 extends JFrame
 		correctError("107s", 1113.88);
 		applyInterest();
 		insertNewAccount("111s", 100);
-		fileUpdated("src/Temp.txt");
+		fileUpdated("Temp.txt");
 
 		text.setFont(new Font("Monospaced", Font.PLAIN, 12));
 		Container cont = getContentPane();

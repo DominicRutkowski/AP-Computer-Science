@@ -13,6 +13,8 @@ import javafx.stage.Stage;
 public class TicTacToe extends Application
 {
 	private Board board;
+	private String next = "X";
+	private int[] scores = {0,0,0,0,0,0,0,0};
 
 	public void start(Stage primaryStage) throws Exception
 	{
@@ -34,6 +36,9 @@ public class TicTacToe extends Application
 				buttons[i][j].setStyle("-fx-border-color: #000000");
 				buttons[i][j].setPrefWidth(100);
 				buttons[i][j].setPrefHeight(100);
+				int finalI = i;
+				int finalJ = j;
+				buttons[i][j].setOnAction(event -> registerClick(finalI, finalJ));
 				grid.add(buttons[i][j], j, i, 1, 1);
 			}
 		}
@@ -53,5 +58,49 @@ public class TicTacToe extends Application
 			}
 		}
 		board.drawBoard();
+	}
+
+	private void registerClick(int row, int col)
+	{
+		if (!board.isOccupied(row, col))
+		{
+			board.addPiece(new Piece(next), row, col);
+			board.drawBoard();
+			int add;
+			if (next.equals("X"))
+			{
+				add = 1;
+			}
+			else
+			{
+				add = -1;
+			}
+			scores[row] += add;
+			scores[3 + col] += add;
+			if (row + col == 2)
+			{
+				scores[6] += add;
+			}
+			if (row == col)
+			{
+				scores[7] += add;
+			}
+			detectWin();
+		}
+	}
+
+	private void detectWin()
+	{
+		for (int i = 0; i < scores.length; i++)
+		{
+			if (scores[i] == 3 || scores[i] == -3)
+			{
+				if (i < 3)
+				{
+					if (board[])
+				}
+				return;
+			}
+		}
 	}
 }

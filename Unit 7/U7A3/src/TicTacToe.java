@@ -10,11 +10,14 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
+import javax.swing.*;
+
 public class TicTacToe extends Application
 {
 	private Board board;
 	private String next = "X";
 	private int[] scores = {0,0,0,0,0,0,0,0};
+	private boolean won = false;
 
 	public void start(Stage primaryStage) throws Exception
 	{
@@ -62,30 +65,53 @@ public class TicTacToe extends Application
 
 	private void registerClick(int row, int col)
 	{
-		if (!board.isOccupied(row, col))
+		if (!won)
 		{
-			board.addPiece(new Piece(next), row, col);
-			board.drawBoard();
-			int add;
-			if (next.equals("X"))
+			if (!board.isOccupied(row, col))
 			{
-				add = 1;
+				board.addPiece(new Piece(next), row, col);
+				board.drawBoard();
+				int add;
+				if (next.equals("X"))
+				{
+					add = 1;
+				}
+				else
+				{
+					add = -1;
+				}
+				scores[row] += add;
+				scores[3 + col] += add;
+				if (row + col == 2)
+				{
+					scores[6] += add;
+				}
+				if (row == col)
+				{
+					scores[7] += add;
+				}
+				detectWin();
+				if (!won)
+				{
+					checkForTie();
+				}
+				if (next.equals("X"))
+				{
+					next = "O";
+				}
+				else
+				{
+					next = "X";
+				}
 			}
 			else
 			{
-				add = -1;
+				JOptionPane.showMessageDialog(null, "That space is occupied.", "Tic-Tac-Toe Message", JOptionPane.WARNING_MESSAGE);
 			}
-			scores[row] += add;
-			scores[3 + col] += add;
-			if (row + col == 2)
-			{
-				scores[6] += add;
-			}
-			if (row == col)
-			{
-				scores[7] += add;
-			}
-			detectWin();
+		}
+		else
+		{
+			JOptionPane.showMessageDialog(null, "The game is over.", "Tic-Tac-Toe Message", JOptionPane.WARNING_MESSAGE);
 		}
 	}
 
@@ -95,12 +121,73 @@ public class TicTacToe extends Application
 		{
 			if (scores[i] == 3 || scores[i] == -3)
 			{
+				won = true;
 				if (i < 3)
 				{
-					if (board[])
+					if (board.getBoard()[i][0].equals(new Piece("X")))
+					{
+						winner("X");
+					}
+					else
+					{
+						winner("O");
+					}
+				}
+				else if (i >= 3 && i < 6)
+				{
+					if (board.getBoard()[0][i - 3].equals(new Piece("X")))
+					{
+						winner("X");
+					}
+					else
+					{
+						winner("O");
+					}
+				}
+				else if (i == 6)
+				{
+					if (board.getBoard()[0][2].equals(new Piece("X")))
+					{
+						winner("X");
+					}
+					else
+					{
+						winner("O");
+					}
+				}
+				else
+				{
+					if (board.getBoard()[0][0].equals(new Piece("X")))
+					{
+						winner("X");
+					}
+					else
+					{
+						winner("O");
+					}
 				}
 				return;
 			}
 		}
+	}
+
+	private void winner(String winner)
+	{
+		JOptionPane.showMessageDialog(null, "The game was won by " + winner + ".", "Tic-Tac-Toe Results", JOptionPane.INFORMATION_MESSAGE);
+	}
+
+	private void checkForTie()
+	{
+		for (int i = 0; i < 3; i++)
+		{
+			for (int j = 0; j < 3; j++)
+			{
+				if (!board.isOccupied(i, j))
+				{
+					return;
+				}
+			}
+		}
+		JOptionPane.showMessageDialog(null, "The game is tied.", "Tic-Tac-Toe Results", JOptionPane.INFORMATION_MESSAGE);
 	}
 }

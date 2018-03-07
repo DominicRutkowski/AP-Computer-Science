@@ -9,13 +9,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-
-import javax.swing.*;
+import javax.swing.JOptionPane;
 
 public class TicTacToe extends Application
 {
 	private Board board;
-	private String next = "X";
+	private Piece next = new Piece("X");
 	private int[] scores = {0,0,0,0,0,0,0,0};
 	private boolean won = false;
 
@@ -69,10 +68,10 @@ public class TicTacToe extends Application
 		{
 			if (!board.isOccupied(row, col))
 			{
-				board.addPiece(new Piece(next), row, col);
+				board.addPiece(next, row, col);
 				board.drawBoard();
 				int add;
-				if (next.equals("X"))
+				if (next.getID().equals("X"))
 				{
 					add = 1;
 				}
@@ -95,13 +94,13 @@ public class TicTacToe extends Application
 				{
 					checkForTie();
 				}
-				if (next.equals("X"))
+				if (next.getID().equals("X"))
 				{
-					next = "O";
+					next = new Piece("O");
 				}
 				else
 				{
-					next = "X";
+					next = new Piece("X");
 				}
 			}
 			else
@@ -119,7 +118,7 @@ public class TicTacToe extends Application
 	{
 		for (int i = 0; i < scores.length; i++)
 		{
-			if (scores[i] == 3 || scores[i] == -3)
+			if (Math.abs(scores[i]) == 3)
 			{
 				won = true;
 				if (i < 3)
@@ -133,7 +132,7 @@ public class TicTacToe extends Application
 						winner("O");
 					}
 				}
-				else if (i >= 3 && i < 6)
+				else if (i < 6)
 				{
 					if (board.getBoard()[0][i - 3].equals(new Piece("X")))
 					{

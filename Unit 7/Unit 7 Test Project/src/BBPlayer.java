@@ -1,6 +1,8 @@
 // Dominic Rutkowski
 //
-/*
+/* This class represents baseball players.
+   It stores information about their uniform
+   number, position, year, and points per game.
 */
 
 public class BBPlayer
@@ -28,6 +30,7 @@ public class BBPlayer
 				entry += input.charAt(i);
 			}
 		}
+		out[counter] = entry;
 		num = Integer.parseInt(out[0]);
 		year = Integer.parseInt(out[1]);
 		pos = out[2].charAt(0);

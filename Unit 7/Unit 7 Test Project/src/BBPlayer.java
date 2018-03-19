@@ -14,23 +14,7 @@ public class BBPlayer
 
 	public BBPlayer(String input)
 	{
-		String[] out = new String[4];
-		int counter = 0;
-		String entry = "";
-		for (int i = 0; i < input.length(); i++)
-		{
-			if (input.charAt(i) == ' ')
-			{
-				out[counter] = entry;
-				counter++;
-				entry = "";
-			}
-			else
-			{
-				entry += input.charAt(i);
-			}
-		}
-		out[counter] = entry;
+		String[] out = input.split(" ");
 		num = Integer.parseInt(out[0]);
 		year = Integer.parseInt(out[1]);
 		pos = out[2].charAt(0);

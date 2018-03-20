@@ -1,6 +1,6 @@
 // Dominic Rutkowski
 //
-/* This class represents baseball players.
+/* This class represents basketball players.
    It stores information about their uniform
    number, position, year, and points per game.
 */

@@ -64,7 +64,7 @@ public class U7Test extends JFrame
 	{
 		try
 		{
-			Scanner reader = new Scanner(new File("src/U7Test.txt"));
+			Scanner reader = new Scanner(new File("U7Test.txt"));
 			while (reader.hasNext())
 			{
 				String inputLine = reader.nextLine();

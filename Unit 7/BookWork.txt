@@ -1,0 +1,41 @@
+Pages 324 - 327
+Exercises: R7.1, R7.3, R7.4, R7.14, R7.16d, R7.18c, R7.18d
+
+R7.1. An index is the "element number/key" in an array or ArrayList. The bounds of an array or ArrayList are [0, length - 1]. A bounds error is when you try and access an element with an index that doesn't exist.
+
+R7.3.	ArrayList<Account> list = new ArrayList<Account>();
+		// Assume list is filled here
+		int min = Integer.MAXIMUM;
+		int max = Integer.MINIMUM;
+		for (Account account : list)
+		{
+			if (account.getBalance() > max)
+			{
+				max = account.getBalance();
+			}
+			if (account.getBalance() < min)
+			{
+				min = account.getBalance();
+			}
+		}
+
+R7.4.	ArrayList<String> list = new ArrayList<String>();
+		for (int i = 0; i < 10; i++)
+		{
+			list.add(/* Assume strings are read here */);
+		}
+		for (int i = 9; i >= 0; i--)
+		{
+			System.out.println(list.get(i));
+		}
+
+R7.14. One method could loop through each account and apply interest. Another method could loop through each account with a certain balance and assess a penalty.
+	   One method could sort the accounts by balance to learn about the demographics of the account holders. Another method could sort accounts by the geographic region of residence of the account holder.
+
+R7.16d.	while (list.size() != 0)
+		{
+			list.remove(0);
+		}
+
+R7.18c. True - The method could remove or add elements to the list because it is an object and thus passed by reference.
+R7.18d. False - The array list must hold all elements of the same type. Also, it can't hold primitve elements, though it appears as though it can because of autoboxing and autounboxing.

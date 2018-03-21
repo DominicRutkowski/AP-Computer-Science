@@ -7,15 +7,19 @@ R7.3.	ArrayList<Account> list = new ArrayList<Account>();
 		// Assume list is filled here
 		int min = Integer.MAXIMUM;
 		int max = Integer.MINIMUM;
+		BankAccount minAcct = null;
+		BankAccount maxAcct = null;
 		for (Account account : list)
 		{
 			if (account.getBalance() > max)
 			{
 				max = account.getBalance();
+				maxAcct = account;
 			}
 			if (account.getBalance() < min)
 			{
 				min = account.getBalance();
+				minAcct = account;
 			}
 		}
 
@@ -30,12 +34,12 @@ R7.4.	ArrayList<String> list = new ArrayList<String>();
 		}
 
 R7.14. One method could loop through each account and apply interest. Another method could loop through each account with a certain balance and assess a penalty.
-	   One method could sort the accounts by balance to learn about the demographics of the account holders. Another method could sort accounts by the geographic region of residence of the account holder.
+	   One method could sort the accounts by balance to learn about the demographics of the account holders. Another method could add more accounts.
 
-R7.16d.	while (list.size() != 0)
+R7.16d.	while (list.size() > 0)
 		{
 			list.remove(0);
 		}
 
 R7.18c. True - The method could remove or add elements to the list because it is an object and thus passed by reference.
-R7.18d. False - The array list must hold all elements of the same type. Also, it can't hold primitve elements, though it appears as though it can because of autoboxing and autounboxing.
+R7.18d. False - The array list must hold all elements of the same type. Also, it can't hold primitive elements, though it appears as though it can because of auto boxing and auto unboxing.

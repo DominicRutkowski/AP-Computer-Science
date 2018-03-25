@@ -47,7 +47,7 @@ public class StockItem
 		}
 	}
 
-	public void add (int n)
+	public void add(int n)
 	{
 		numOnShelf += n;
 	}

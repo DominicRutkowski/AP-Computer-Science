@@ -1,6 +1,8 @@
 // Dominic Rutkowski
 //
-/*
+/* The Dice class represents the rolls of two
+   dice and allows the sum to be calculated and
+   measured for the purposes of the Tally class.
 */
 
 public class Dice implements Measurable

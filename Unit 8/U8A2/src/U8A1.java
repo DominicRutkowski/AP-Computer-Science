@@ -1,10 +1,14 @@
 // Dominic Rutkowski
 //
-/*
+/* Demonstrates how to save code by using interfaces
+   by measuring the data of basketball players and
+   bank accounts with the same class and interface.
 */
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+import java.awt.Container;
+import java.awt.Font;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;

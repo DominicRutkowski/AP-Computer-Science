@@ -1,5 +1,7 @@
 // Dominic Rutkowski
-/*
+//
+/* The driver class for U8A3 simulates a card
+   game (hearts) being played.
 */
 
 import javax.swing.JOptionPane;

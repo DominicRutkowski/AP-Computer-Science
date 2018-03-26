@@ -1,6 +1,8 @@
 // Dominic Rutkowski
 //
-/*
+/* Demonstrates how to save code by using interfaces
+   by measuring the data of basketball players and
+   bank accounts with the same class and interface.
 */
 
 import java.awt.Container;

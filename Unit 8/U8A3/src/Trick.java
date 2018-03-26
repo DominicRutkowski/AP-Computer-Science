@@ -1,12 +1,15 @@
 // Dominic Rutkowski
-/*
+//
+/* The Trick class represents a trick in the game
+   of cards. Instances each serve as a "turn" in
+   the game.
 */
 
 import java.util.ArrayList;
 
 public class Trick
 {
-    private ArrayList<Card> cards = new ArrayList<Card>();
+    private ArrayList<Card> cards;
     private int points = 0;
 
     public Trick(ArrayList<Card> cards)

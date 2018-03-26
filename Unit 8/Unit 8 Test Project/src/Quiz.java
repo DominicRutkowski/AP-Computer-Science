@@ -1,6 +1,8 @@
 // Dominic Rutkowski
 //
-/*
+/* The Quiz class simulates a quiz. It stores the
+   letter and numerical grade, the form of which can
+   be measured for the purposes of the Tally class.
 */
 
 public class Quiz implements Measurable

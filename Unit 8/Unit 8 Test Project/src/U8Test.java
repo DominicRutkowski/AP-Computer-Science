@@ -1,6 +1,9 @@
 // Dominic Rutkowski
 //
-/*
+/* The U8Test driver class demonstrates the power
+   of interfaces by showing how dice rolls and quiz
+   scores can be treated equally and measured by the
+   same methods, despite being different types of data.
 */
 
 import java.awt.Container;

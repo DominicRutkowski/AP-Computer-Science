@@ -1,6 +1,8 @@
 // Dominic Rutkowski
 //
-/*
+/* Allows for data to be analyzed in order
+   to determine the maximum, minimum, count,
+   sum, and average.
 */
 
 public class DataSet

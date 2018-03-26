@@ -1,5 +1,8 @@
 // Dominic Rutkowski
-/*
+//
+/* The Card class represents cards from a standard
+   set of 52 cards. It is used to implement a game
+   of hearts and can be compared to other cards.
 */
 
 public class Card implements Comparable
@@ -36,7 +39,7 @@ public class Card implements Comparable
         }
         else
         {
-            throw new IllegalArgumentException("Must pass another Card object.");
+            throw new IllegalArgumentException("Must pass a Card object.");
         }
     }
 

@@ -6,5 +6,5 @@
 
 public interface Measurable
 {
-    double getMeasure();
+	double getMeasure();
 }

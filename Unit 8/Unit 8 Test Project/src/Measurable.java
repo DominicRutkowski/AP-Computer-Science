@@ -8,5 +8,5 @@
 
 public interface Measurable
 {
-    String getResult();
+	String getResult();
 }

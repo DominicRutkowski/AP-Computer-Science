@@ -7,7 +7,7 @@
 
 public interface Measurable
 {
-    double getMeasure();
+	double getMeasure();
 
-    boolean accept();
+	boolean accept();
 }

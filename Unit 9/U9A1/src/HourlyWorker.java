@@ -21,7 +21,8 @@ public class HourlyWorker extends Worker
 		}
 		else
 		{
-			return computePay(hours) + (1.5 * computePay(hours - 40));
+			int overtime = hours - 40;
+			return computePay(hours - overtime) +(1.5 * computePay(overtime));
 		}
 	}
 }

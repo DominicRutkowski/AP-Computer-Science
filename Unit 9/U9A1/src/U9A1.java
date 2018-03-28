@@ -28,22 +28,28 @@ public class U9A1 extends JFrame
 	private void testHourly()
 	{
 		HourlyWorker johnDoe = new HourlyWorker("John Doe", 9.48, 43);
-		double pay = johnDoe.wage();
+		String pay = String.format("$%.2f", johnDoe.wage());
 		text.append("Test Hourly Worker Class\n");
 		text.append("------------------------\n");
-		text.append("Wage for " + johnDoe,getName() + " = " + String.format("%.2f", pay));
+		text.append("Wage for " + johnDoe.getName() + " = " + pay + "\n\n");
 	}
 
 	private void testSalaried()
 	{
 		SalariedWorker karenJones = new SalariedWorker("Karen Jones", 25.76, 52);
-		double pay = karenJones.wage();
+		String pay = String.format("$%.2f", karenJones.wage());
+		text.append("Test Salaried Worker Class\n");
+		text.append("--------------------------\n");
+		text.append("Wage for " + karenJones.getName() + " = " + pay + "\n\n");
 	}
 
 	private void testPiece()
 	{
 		PieceWorker wesleySmith = new PieceWorker("Wesley Smith", 5.65, 36);
-		double pay = wesleySmith.wage(1025);
+		String pay = String.format("$%.2f", wesleySmith.wage(1025));
+		text.append("Test Piece Worker Class\n");
+		text.append("-----------------------\n");
+		text.append("Wage for " + wesleySmith.getName() + " = " + pay + "\n\n");
 	}
 
 	public static void main(String[] args)

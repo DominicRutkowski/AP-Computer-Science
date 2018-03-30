@@ -30,17 +30,10 @@ public class Card implements Comparable
 		}
 	}
 
-	public int compareTo(Object object) throws IllegalArgumentException
+	public int compareTo(Object object)
 	{
-		if (object instanceof Card)
-		{
-			Card card = (Card) object;
-			return this.getValue() - card.getValue();
-		}
-		else
-		{
-			throw new IllegalArgumentException("Must pass a Card object.");
-		}
+		Card card = (Card) object;
+		return Integer.compare(this.getValue(), card.getValue());
 	}
 
 	public String getSuit()

@@ -9,23 +9,22 @@ import javax.swing.JFrame;
 import javax.swing.JTextArea;
 import java.awt.Container;
 import java.awt.Font;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
-public class U8A1 extends JFrame
+public class U8A2 extends JFrame
 {
-	private U8A1()
+	private U8A2()
 	{
 		JTextArea text = new JTextArea();
 
-		DataSet BBPlayerData = readBBPlayerData("src/BBPlayerData.txt");
+		DataSet BBPlayerData = readBBPlayerData("BBPlayerData.txt");
 		text.append("BBPlayer Stats\n--------------\n\n");
 		text.append("Minimum Points Per Game = " + String.format("%.1f", BBPlayerData.getMin()) + "\n\n");
 		text.append("Maximum Points Per Game = " + String.format("%.1f", BBPlayerData.getMax()) + "\n\n");
 		text.append("Average Points Per Game = " + String.format("%.2f", BBPlayerData.getAve()) + "\n\n");
 
-		DataSet BankAccountData = readBankAccountData("src/BankAccountData.txt");
+		DataSet BankAccountData = readBankAccountData("BankAccountData.txt");
 		text.append("\nBankAccount Stats\n-----------------\n\n");
 		text.append("Minimum Bank Account = " + String.format("%.2f", BankAccountData.getMin()) + "\n\n");
 		text.append("Maximum Bank Account = " + String.format("%.2f", BankAccountData.getMax()) + "\n\n");
@@ -84,7 +83,7 @@ public class U8A1 extends JFrame
 
 	public static void main(String[] args)
 	{
-		U8A1 app = new U8A1();
+		U8A2 app = new U8A2();
 		app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }

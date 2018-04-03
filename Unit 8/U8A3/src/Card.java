@@ -24,7 +24,7 @@ public class Card implements Comparable
 		{
 			points = 1;
 		}
-		if (suit.equals("Spades") && value == 12)
+		else if (suit.equals("Spades") && value == 12)
 		{
 			points = 13;
 		}
@@ -33,7 +33,7 @@ public class Card implements Comparable
 	public int compareTo(Object object)
 	{
 		Card card = (Card) object;
-		return Integer.compare(this.getValue(), card.getValue());
+		return this.getValue() - card.getValue();
 	}
 
 	public String getSuit()

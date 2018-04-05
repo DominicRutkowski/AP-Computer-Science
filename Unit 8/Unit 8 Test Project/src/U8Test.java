@@ -52,13 +52,13 @@ public class U8Test extends JFrame
 		text.setFont(new Font("Monospaced", Font.PLAIN, 12));
 		Container cont = getContentPane();
 		cont.add(text);
-		setSize(300, 500);
+		setSize(300, 600);
 		setVisible(true);
 	}
 
 	private int inclusiveRandom(int min, int max)
 	{
-		return (int) (Math.random() * (max - min) + min);
+		return (int) (Math.random() * ((max - min) + 1)) + min;
 	}
 
 	public static void main(String[] args)

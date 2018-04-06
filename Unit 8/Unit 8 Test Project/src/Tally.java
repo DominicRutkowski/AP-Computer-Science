@@ -4,6 +4,7 @@
    to count/tally items in a set of data such as
    dice rolls or grades.
 */
+
 public class Tally
 {
 	private static String[] item;

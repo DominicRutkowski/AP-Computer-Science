@@ -31,15 +31,15 @@ public class RightTriangle implements Shape, Comparable
 		{
 			return 1;
 		}
-		else if (this.area() < shape.area())
+		if (this.area() < shape.area())
 		{
 			return -1;
 		}
-		else if (this.perimeter() > shape.perimeter())
+		if (this.perimeter() > shape.perimeter())
 		{
 			return 1;
 		}
-		else if (this.perimeter() < shape.perimeter())
+		if (this.perimeter() < shape.perimeter())
 		{
 			return -1;
 		}

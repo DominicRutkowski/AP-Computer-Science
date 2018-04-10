@@ -21,7 +21,7 @@ public class Rectangle implements Shape, Comparable
 
 	public String toString()
 	{
-		return "Rectangle [" + length + ", " + width + "]";
+		return "Rectangle[" + length + ", " + width + "]";
 	}
 
 	public int compareTo(Object object)

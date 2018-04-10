@@ -25,21 +25,21 @@ public class Driver
         {
             Comparable first = list.get(i);
             Comparable second = list.get(i + 1);
-            System.out.println(toString(first.compareTo(second), (Shape) first, (Shape) second));
+            Shape firstShape = (Shape) first;
+            Shape secondShape = (Shape) second;
+            if (first.compareTo(second) > 0)
+            {
+            	System.out.println(firstShape.toString() + " is greater than " + secondShape.toString());
+            }
+            else if (first.compareTo(second) < 0)
+            {
+            	System.out.println(firstShape.toString() + " is less than " + secondShape.toString());
+            }
+            else
+            {
+            	System.out.println("Shapes are equal");
+            }
         }
-    }
-
-    private String toString(int comparison, Shape first, Shape second)
-    {
-        if (comparison == -1)
-        {
-            return first.toString() + " is less than " + second.toString();
-        }
-        if (comparison == 1)
-        {
-            return first.toString() + " is greater than " + second.toString();
-        }
-        return "Shapes are equal";
     }
 
     public static void main(String[] args)

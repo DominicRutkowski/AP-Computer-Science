@@ -21,7 +21,7 @@ public class RightTriangle implements Shape, Comparable
 
 	public String toString()
 	{
-		return "Right Triangle [" + leg1 + ", " + leg2 + "]";
+		return "RightTriangle[" + leg1 + ", " + leg2 + "]";
 	}
 
 	public int compareTo(Object object)

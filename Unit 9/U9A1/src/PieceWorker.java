@@ -1,6 +1,9 @@
 // Dominic Rutkowski
 //
-/*
+/* The PieceWorker is a type of
+   Worker which is paid based on
+   the hours worked and the pieces
+   finished.
 */
 
 public class PieceWorker extends Worker
@@ -15,7 +18,7 @@ public class PieceWorker extends Worker
 
 	public double wage(int pieces)
 	{
-		return super.computePay(hours) + computePay(pieces);
+		return super.computePay(hours) + this.computePay(pieces);
 	}
 
 	public double computePay(int pieces)

@@ -1,6 +1,9 @@
 // Dominic Rutkowski
 //
-/*
+/* The Worker class has a name
+   and a wage. It is extended by
+   HourlyWorker, SalariedWorker,
+   and PieceWorker.
 */
 
 public class Worker

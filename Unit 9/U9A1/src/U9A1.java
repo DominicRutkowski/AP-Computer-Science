@@ -1,6 +1,9 @@
 // Dominic Rutkowski
 //
-/*
+/* This class demonstrates inheritance by
+   testing the HourlyWorker, SalariedWorker,
+   and PieceWorker classes, each of which
+   extend the Worker superclass.
 */
 
 import java.awt.Container;

@@ -1,6 +1,8 @@
 // Dominic Rutkowski
 //
-/*
+/* The SalariedWorker is a Worker that
+   is paid the same amount regardless
+   of their hours worked.
 */
 
 public class SalariedWorker extends Worker

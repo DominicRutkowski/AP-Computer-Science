@@ -3,8 +3,12 @@
 /*
 */
 
+import java.awt.Color;
+import java.awt.Graphics;
+
 public class Point
 {
+	private static final int INCREMENT = 10;
 	private int x;
 	private int y;
 
@@ -14,28 +18,29 @@ public class Point
 		this.y = y;
 	}
 
-	public void setX(int x)
+	public void incrementX()
 	{
-		this.x = x;
+		x += INCREMENT;
 	}
 
-	public void setY(int y)
+	public void incrementY()
 	{
-		this.y = y;
+		y += INCREMENT;
 	}
 
-	public void draw()
+	public void decrementX()
 	{
-
+		x -= INCREMENT;
 	}
 
-	public int getX()
+	public void decremendY()
 	{
-		return x;
+		y -= INCREMENT;
 	}
 
-	public int getY()
+	public void draw(Graphics g)
 	{
-		return y;
+		g.setColor(Color.GREEN);
+		g.drawString("*", x, y);
 	}
 }

@@ -3,6 +3,8 @@
 /*
 */
 
+import java.awt.Graphics;
+
 public class Line extends Point
 {
 	private int length;
@@ -13,26 +15,16 @@ public class Line extends Point
 		this.length = length;
 	}
 
-	public void setLength(int length)
-	{
-		this.length = length;
-	}
-
-	public void draw()
+	public void draw(Graphics g)
 	{
 		for (int i = 0; i < length; i++)
 		{
-			super.draw();
-			super.setX(super.getX() + 1);
+			super.draw(g);
+			incrementX();
 		}
 		for (int i = 0; i < length; i++)
 		{
-			super.setX(super.getX() - 1);
+			decrementX();
 		}
-	}
-
-	public int getLength()
-	{
-		return length;
 	}
 }

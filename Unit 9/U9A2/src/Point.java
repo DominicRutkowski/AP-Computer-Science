@@ -1,9 +1,11 @@
 // Dominic Rutkowski
 //
-/*
+/* This class represents a Point on a
+   JApplet. It can be printed in green.
 */
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 
 public class Point
@@ -33,7 +35,7 @@ public class Point
 		x -= INCREMENT;
 	}
 
-	public void decremendY()
+	public void decrementY()
 	{
 		y -= INCREMENT;
 	}
@@ -41,6 +43,7 @@ public class Point
 	public void draw(Graphics g)
 	{
 		g.setColor(Color.GREEN);
+		g.setFont(new Font("Monospaced", Font.BOLD, 16));
 		g.drawString("*", x, y);
 	}
 }

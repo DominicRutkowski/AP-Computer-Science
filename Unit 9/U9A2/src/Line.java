@@ -1,6 +1,7 @@
 // Dominic Rutkowski
 //
-/*
+/* This class extends the Point class into
+   a Line by including a length instance field.
 */
 
 import java.awt.Graphics;

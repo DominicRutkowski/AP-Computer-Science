@@ -1,7 +1,10 @@
 // Dominic Rutkowski
 //
-/*
+/* The Rectangle class extends the Line class
+   by including a height instance field.
 */
+
+import java.awt.Graphics;
 
 public final class Rectangle extends Line
 {
@@ -11,5 +14,18 @@ public final class Rectangle extends Line
 	{
 		super(x, y, length);
 		this.height = height;
+	}
+
+	public void draw(Graphics g)
+	{
+		for (int i = 0; i < height; i++)
+		{
+			super.draw(g);
+			incrementY();
+		}
+		for (int i = 0; i < height; i++)
+		{
+			decrementY();
+		}
 	}
 }

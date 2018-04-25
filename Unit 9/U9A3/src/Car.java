@@ -1,6 +1,8 @@
 // Dominic Rutkowski
 //
-/*
+/* The Car class is a type of Vehicle.
+   It can be painted on a JFrame with
+   a driver class.
 */
 
 import java.awt.Color;

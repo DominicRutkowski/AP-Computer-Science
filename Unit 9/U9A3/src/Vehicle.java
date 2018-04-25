@@ -1,6 +1,7 @@
 // Dominic Rutkowski
 //
-/*
+/* The Vehicle abstract class allows for
+   Cars and Trucks to be drawn on a JFrame.
 */
 
 import java.awt.Graphics;

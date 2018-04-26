@@ -21,7 +21,7 @@ public class U9Test
 		players.add(new Fielder("Jason Brown", 16, 23, 6, 3));
 		for (BaseballPlayer player : players)
 		{
-			System.out.println(player.toString());
+			System.out.println(player);
 		}
 	}
 }

@@ -22,33 +22,9 @@ public class Term implements Comparable
 		return new Term(coefficient, exponent);
 	}
 
-	public boolean isNonnegative()
-	{
-		return coefficient >= 0;
-	}
-
 	public String toString()
 	{
-		if (exponent == 0)
-		{
-			return Integer.toString(coefficient);
-		}
-		else if (coefficient == 1 && exponent == 1)
-		{
-			return "x";
-		}
-		else if (coefficient == 1 && exponent > 1)
-		{
-			return "x^" + exponent;
-		}
-		else if (exponent == 1)
-		{
-			return coefficient + "x";
-		}
-		else // if (exponent > 1)
-		{
-			return coefficient + "x^" + exponent;
-		}
+		return "+ " + coefficient + "x^" + exponent;
 	}
 
 	public int compareTo(Object object)

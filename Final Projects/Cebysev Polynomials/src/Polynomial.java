@@ -81,7 +81,13 @@ public class Polynomial
 			}
 		}
 		terms.clear();
-		polynomial.forEach((k, v) -> terms.add(new Term(v, k)));
+		polynomial.forEach((k, v) ->
+		{
+			if (v != 0)
+			{
+				terms.add(new Term(v, k));
+			}
+		});
 
 		// Insertion sort by degree of each term
 		int j;
@@ -102,27 +108,10 @@ public class Polynomial
 	public String toString()
 	{
 		simplify();
-		String result;
-		if (terms.get(0).isNonnegative())
-		{
-			result = terms.get(0).toString();
-		}
-		else
-		{
-			result = "-" + terms.get(0).toString();
-		}
+		String result = "" + terms.get(0).toString();
 		for (int i = 1; i < terms.size(); i++)
 		{
-			Term term = terms.get(i);
-			if (term.isNonnegative())
-			{
-				result += " + ";
-			}
-			else
-			{
-				result += " - ";
-			}
-			result += term.toString();
+			result += " " + terms.get(i).toString();
 		}
 		return result;
 	}

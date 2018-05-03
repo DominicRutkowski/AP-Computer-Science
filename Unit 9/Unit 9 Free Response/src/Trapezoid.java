@@ -25,13 +25,8 @@ public class Trapezoid extends Quadrilateral
 
 	public double area()
 	{
-		double top = distance(topLeft, topRight);
-		double bot = distance(botLeft, botRight);
-		double left = distance(topLeft, botLeft);
-		double right = distance(topRight, botRight);
-		double h = distance(topLeft, botRight);
-		double s1 = (left + bot + h) / 2;
-		double s2 = (top + right + h) / 2;
-		return Math.sqrt(s1 * (s1 - left) * (s1 - bot) * (s1 - h)) + Math.sqrt(s2 * (s2 - top) * (s2 - right) * (s2 - h));
+		int height = topLeft.getY() - botLeft.getY();
+		double base = (double) (distance(topLeft, topRight) + distance(botLeft, botRight)) / 2;
+		return base * height;
 	}
 }

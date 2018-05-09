@@ -11,6 +11,7 @@ public class Polynomial
 {
 	private ArrayList<Term> terms;
 
+	// Monomial constructor
 	public Polynomial(Term term)
 	{
 		terms = new ArrayList<Term>();
@@ -55,10 +56,11 @@ public class Polynomial
 
 	public Polynomial additiveInverse()
 	{
+		final Term NEGATIVE_ONE = new Term(-1, 0);
 		ArrayList<Term> terms = new ArrayList<Term>();
 		for (Term term : this.terms)
 		{
-			terms.add(term.multiply(new Term(-1, 0)));
+			terms.add(term.multiply(NEGATIVE_ONE));
 		}
 		Polynomial resultPolynomial = new Polynomial(terms);
 		resultPolynomial.simplify();
@@ -80,7 +82,10 @@ public class Polynomial
 				polynomial.put(term.getExponent(), term.getCoefficient());
 			}
 		}
-		terms.clear();
+		while (terms.size() > 0)
+		{
+			terms.remove(0);
+		}
 		polynomial.forEach((k, v) ->
 		{
 			if (v != 0)
@@ -108,10 +113,10 @@ public class Polynomial
 	public String toString()
 	{
 		simplify();
-		String result = "" + terms.get(0).toString();
-		for (int i = 1; i < terms.size(); i++)
+		String result = "";
+		for (int i = 0; i < terms.size(); i++)
 		{
-			result += " " + terms.get(i).toString();
+			result += terms.get(i).toString() + " ";
 		}
 		return result;
 	}

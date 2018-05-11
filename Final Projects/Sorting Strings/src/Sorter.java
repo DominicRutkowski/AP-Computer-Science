@@ -36,6 +36,7 @@ public class Sorter
 		{
 			System.out.print(item + " ");
 		}
+		System.out.print("\n");
 	}
 
 	private int compare(String one, String two)
